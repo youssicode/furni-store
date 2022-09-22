@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fourniture Web Site</title>
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-Awesome icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <!--! ====== Header + Links included========= -->
+    <header role="banner" id="mainHeader">    
+    </header>
+    <!-- The Script Must be After the Element we want to Fill (mainHeader) -->
+    <script src="./js/includeHeaderBar.js"></script>
+    <!--! -------- Main Screen  -------- -->
+    <main>
+      <div class="container slidesParent">
+        <label class="sldLcntrl" >&lt;</label>
+        <label class="sldRcntrl" >&gt;</label>
+        <!-- <label class="sldLcntrl" onclick="slideLeft()">&lt;</label>
+        <label class="sldRcntrl" onclick="slideRight()">&gt;</label> -->
+
+        <div class="slideBox">
+          <div id="slideId1" class="slide slide1">
+            <div class="slideDesc">
+              <h3>new arrivals</h3>
+              <h1>flexible chair</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia odio rerum quia ratione doloribus iste.
+              </p>
+              <button>shop now</button>
+            </div>
+
+            <img
+              class="slidePhoto"
+              src="./images/home-img-1.png"
+              alt="Photo-Slider"
+            />
+          </div>
+
+          <div id="slideId2" class="slide slide2">
+            <div class="slideDesc">
+              <h3>new arrivals</h3>
+              <h1>desktop sofa</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia odio rerum quia ratione doloribus iste.
+              </p>
+              <button>shop now</button>
+            </div>
+            <img
+              class="slidePhoto"
+              src="./images/home-img-2.png"
+              alt="Photo-Slider"
+            />
+          </div>
+          
+          <div id="slideId3" class="slide slide3">
+            <div class="slideDesc">
+              <h3>new arrivals</h3>
+              <h1>new fourniture</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia odio rerum quia ratione doloribus iste.
+              </p>
+              <button>shop now</button>
+            </div>
+            <img
+              class="slidePhoto"
+              src="./images/home-img-3.png"
+              alt="Photo-Slider"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+<!-- Offers Section  -->
+    <div class="offers">
+      <div class="container offersCnt">
+        <div class="offer offer1">
+          <img src="./images/banner-1.jpg" alt="Fourniture banner">
+          <div class="offerDesc">
+            <p>limited offer</p>
+            <h4>upto 50% off</h4>
+            <button>shop now</button>
+          </div>
+        </div>
+        <div class="offer offer2">
+          <img src="./images/banner-2.jpg" alt="Fourniture banner">
+          <div class="offerDesc">
+            <p>limited offer</p>
+            <h4>upto 50% off</h4>
+            <button>shop now</button>
+          </div>
+        </div>
+        <div class="offer offer3">
+          <img src="./images/banner-3.jpg" alt="Fourniture banner">
+          <div class="offerDesc">
+            <p>limited offer</p>
+            <h4>upto 50% off</h4>
+            <button>shop now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--! =========Including Map Links Section =================== -->
+    <div class="mapSection" id="mapId">     
+    </div>
+    <script src="./js/includeMap.js"></script>
+
+    <!--! ===== Popup Window insertion then Hiding + closePopUp Function ==== -->
+    <div id="popupId" class="popup"> 
+    </div>
+    <!-- The Script Must be After the Element we want to Fill (popupId) -->
+    <script src="./js/includePopup.js"></script> 
+    
+    <!--! ============= Main JS file =================== -->
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>

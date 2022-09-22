@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fourniture Web Site - Contact</title>
+    <!-- Custom CSS files -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-Awesome icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+
+    <!--! ====== Header + Links included========= -->
+    <header role="banner" id="mainHeader">    
+    </header>
+    <!-- The Script Must be After the Element we want to Fill (mainHeader) -->
+    <script src="./js/includeHeaderBar.js"></script>
+
+    <!--! ======== Main Screen ======== -->
+    <!-- Contact Title Bar  -->
+    <div class="titleBar">
+      <div class="container">
+        <h1>contact us</h1>
+        <p><a href="./index.html">home /</a><span>contact</span></p>
+      </div>
+    </div>
+
+    <main>
+        <div class="container contactMainWrapper">          
+          <form class="contactForm" name="contactForm" action="#" method="get" >
+              <h3>get in touch</h3>
+              <p>fields with <abbr title="required">*</abbr> are required</p>
+              <div>
+                <label for="name"> your name <abbr title="Required">*</abbr> </label>
+                <input type="text" id="name">
+              </div>
+              
+              <div>
+                <label for="number">your number <abbr title="Required">*</abbr> </label>
+                <input type="number" id="number">
+              </div>
+              
+              <div>
+                <label for="contactEmail">your email <abbr title="Required">*</abbr> </label>
+                <input type="email" id="contactEmail"  value="yourmail@mail.com">
+              </div>
+
+              <div>
+                <label for="mssg">your message</label>
+                <textarea type="text" id="mssg"></textarea>
+              </div>
+
+              <button form="contactForm">send message</button>
+          </form>
+          <div class="mapLocation">
+            <!-- Start Google Map Implement (without API) -->
+              <div class="gmap_canvas">
+                <iframe width="100%" height="100%" id="gmap_canvas" 
+                  src="https://maps.google.com/maps?q=sidi%20slimane,maroc&t=&z=11&ie=UTF8&iwloc=&output=embed" 
+                  frameborder="0" 
+                  scrolling="no" 
+                  marginheight="0" 
+                  marginwidth="0">
+                </iframe>
+                <a href="https://123movies-org.net"></a>
+                <br>
+                <style>
+                  .gmap_canvas {
+                    overflow:hidden;background:none!important;height:100%;width:100%;
+                  }
+                </style>
+              </div>
+            <!-- End Google Map Implement -->
+          </div>
+        </div>
+    </main>
+    
+    <!--! =========Including Map Links Section =================== -->
+    <div class="mapSection" id="mapId">     
+    </div>
+    <script src="./js/includeMap.js"></script>
+
+    <!--! ===== Popup Window insertion then Hiding + closePopUp Function ==== -->
+    <div id="popupId" class="popup"> 
+    </div>
+    <!-- The Script Must be After the Element we want to Fill (popupId) -->
+    <script src="./js/includePopup.js"></script> 
+    
+    <!--! ============= Main JS file =================== -->
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
