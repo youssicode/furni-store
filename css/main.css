@@ -7,6 +7,7 @@
   --lightgray: #f2f2f2;
   --border: 1px solid var(--green);
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -16,13 +17,16 @@
   transition: .2s linear;
   -webkit-transition: .2s linear;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--green);
 }
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: var(--green-light);
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,6 +38,7 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*!  Common: Header  */
 header,
 main,
@@ -44,12 +49,14 @@ main,
   padding-bottom: 18px;
   background-color: var(--white);
 }
+
 header {
   background-color: var(--green-light);
   position: sticky;
   top: 0;
   z-index: 88;
 }
+
 header .container {
   display: flex;
   justify-content: space-between;
@@ -58,6 +65,7 @@ header .container {
   font-weight: 600;
   color: var(--green);
 }
+
 header .srchForm {
   border: var(--border);
   border-radius: 24px;
@@ -70,29 +78,37 @@ header .srchForm {
   align-items: center;
   justify-content: space-between;
 }
+
 input#srchField {
   border: none;
   font-size: 14px;
   width: 100%;
   height: 100%;
 }
+
 input#srchField:focus {
   outline: none;
 }
+
 .socials i {
   margin-left: 10px;
 }
+
 .socials .searchLink {
   display: none;
 }
+
 .socials i:hover {
-  opacity: .8;}
+  opacity: .8;
+}
+
 i,
 .logo {
   cursor: pointer;
   text-decoration: none;
   color: var(--green);
 }
+
 /** ======= Common: Popup Nav Bar ========  */
 .popup {
   height: 100vh;
@@ -102,10 +118,11 @@ i,
   right: 0;
   z-index: 99;
 }
-.popup.bgOnMouseover {
+
+/* .popup.bgOnMouseover {
   background: url("../images/blog-6.jpg") left center / cover no-repeat;
   transition: all .4s ;
-}
+} */
 #closerId {
   font-size: 50px;
   color: var(--green);
@@ -122,38 +139,44 @@ i,
   display: grid;
   place-items: center;
 }
+
 /***** Links Page  */
 .navContainer ul li {
   list-style: none;
   padding-bottom: 20px;
   text-align: center;
 }
+
 .navContainer ul li a {
   text-decoration: none;
   color: var(--green);
   font-size: 24px;
 }
+
 .navContainer ul li a:hover {
   color: var(--text);
 }
 
 /* ***** Cart Page  ****/
 .cartContainer {
-align-self: flex-start;
-width: 100%;
-padding:0 8%;
-margin-top: 80px;
-font-size: 20px;
+  align-self: flex-start;
+  width: 100%;
+  padding: 0 8%;
+  margin-top: 80px;
+  font-size: 20px;
 }
+
 .cartItem {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .total span:first-child,
-.itemDesc p{
-color: var(--text);
+.itemDesc p {
+  color: var(--text);
 }
+
 .cartContainer button {
   width: 100%;
   line-height: 22px;
@@ -169,10 +192,12 @@ color: var(--text);
   padding: 20px 15px;
   border: var(--border);
 }
+
 .userContainer * {
   font-size: 15px;
   color: var(--text);
 }
+
 .userContainer form input#email,
 .userContainer form input#pass {
   width: 100%;
@@ -182,30 +207,36 @@ color: var(--text);
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .userContainer form button {
   width: 100%;
   margin-bottom: 20px;
   font-size: 18px !important;
   color: var(--white) !important;
 }
+
 .userContainer h4 {
   font-size: 20px;
   color: var(--green);
 }
+
 .userContainer form a {
   color: var(--green);
   text-decoration: none;
 }
+
 h1,
 h3,
 p {
   line-height: 2;
 }
+
 h4 {
   color: var(--green);
   font-size: 1rem;
   font-weight: 600;
 }
+
 button,
 #subscribe {
   background-color: var(--green);
@@ -217,6 +248,7 @@ button,
   display: grid;
   place-items: center;
 }
+
 button:hover,
 #subscribe:hover {
   cursor: pointer;
@@ -228,35 +260,43 @@ button:hover,
   background-color: var(--green-light);
   padding-bottom: 0;
 }
+
 .map {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .mapCol * {
   margin-bottom: 10px;
 }
-.linksCol  p {
+
+.linksCol p {
   font-size: 14px;
   cursor: pointer;
 }
-.linksCol > p:hover i {
-margin-right: 20px;
+
+.linksCol>p:hover i {
+  margin-right: 20px;
 }
-.linksCol > p > i {
+
+.linksCol>p>i {
   color: var(--green);
   margin-right: 6px;
   display: inline;
 }
+
 .mapCol {
   flex: 1 1 190px;
   margin-top: 10px;
   margin-bottom: 15px;
 }
+
 .mapCol p {
-font-size: 0.8rem;
-color: var(--text);
+  font-size: 0.8rem;
+  color: var(--text);
 }
+
 input#inputEmail {
   width: 100%;
   max-width: 250px;
@@ -265,41 +305,48 @@ input#inputEmail {
   border: var(--border);
   outline: none;
 }
+
 footer {
   background-color: var(--green);
   color: var(--green-light);
   font-size: 0.8rem;
   padding: 1rem;
   text-align: center;
-  }
+}
 
-  /*! Common: Title Bar  */
-  .titleBar {
-    background-color: #244d4d;
-    padding: 45px 0;
-    margin-top: 84px;
-  }  
-  .titleBar .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .titleBar h1 {
-    color: var(--white);
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  .titleBar p {
-    font-size: 0.9rem;
-  }
-  .titleBar p a {
-    color: var(--white);
-    text-decoration: none;
-  }
-  .titleBar p span {
-    color: var(--yellow);
-  }
-  /*! Common: Shop, Team, Blog Title, */
+/*! Common: Title Bar  */
+.titleBar {
+  background-color: #244d4d;
+  padding: 45px 0;
+  margin-top: 84px;
+}
+
+.titleBar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleBar h1 {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.titleBar p {
+  font-size: 0.9rem;
+}
+
+.titleBar p a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.titleBar p span {
+  color: var(--yellow);
+}
+
+/*! Common: Shop, Team, Blog Title, */
 .sectionHeading {
   display: flex;
   justify-content: space-between;
@@ -309,20 +356,24 @@ footer {
   border-bottom: var(--border);
   margin-bottom: 1rem;
 }
+
 .sectionHeading h2 {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--green);
 }
+
 .sectionHeading a {
   color: var(--text);
   font-size: 0.8rem;
   text-decoration: none;
 }
+
 /*! Media Queries  */
 html {
   font-size: 133%;
 }
+
 @media screen and (max-width: 991px) {
   .container {
     width: 97%;
@@ -330,26 +381,33 @@ html {
     margin-right: auto;
   }
 }
+
 @media screen and (max-width: 769px) {
   .titleBar {
-    margin-top: 73px; /* Or we can ajust the Header Height:84px Or padding-top+bottom:24.5px */
-  }  
+    margin-top: 73px;
+    /* Or we can ajust the Header Height:84px Or padding-top+bottom:24.5px */
+  }
+
   header .srchForm {
     display: none;
-    position: absolute; /* Header is position Sticky */
+    position: absolute;
+    /* Header is position Sticky */
     width: 100%;
     left: 0;
     max-width: none;
     border-radius: 0;
   }
+
   header .srchFormWide {
     display: flex;
     top: 100%;
     animation: down .3s;
   }
+
   .socials .searchLink {
     display: initial;
   }
+
   footer {
     font-size: 0.6rem;
   }
@@ -359,10 +417,12 @@ html {
   html {
     font-size: 100%;
   }
+
   .titleBar .container {
     flex-direction: column;
     align-items: center;
   }
+
   .mapCol {
     width: 190px;
   }
@@ -375,16 +435,18 @@ html {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-720deg);
   }
 }
+
 @keyframes down {
   0% {
     top: -48px;
   }
+
   100% {
     top: 100%;
   }
 }
-
