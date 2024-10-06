@@ -272,15 +272,19 @@ button:hover,
 }
 
 .linksCol p {
-  font-size: 14px;
   cursor: pointer;
 }
 
-.linksCol>p:hover i {
-  margin-right: 20px;
+.linksCol p a {
+  text-decoration: none;
+  color: var(--text);
 }
 
-.linksCol>p>i {
+.linksCol>p:hover i {
+  margin-right: 10px;
+}
+
+.linksCol>p i {
   color: var(--green);
   margin-right: 6px;
   display: inline;

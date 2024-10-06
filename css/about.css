@@ -1,21 +1,24 @@
-
 section {
   margin-bottom: 1rem;
 }
+
 section.welcome {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 25px;
   align-items: center;
 }
+
 section.welcome figure img {
   width: 100%;
   height: auto;
 }
+
 aside.aboutIntro h5 {
   font-weight: 400;
   color: var(--text);
 }
+
 aside.aboutIntro h2 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -23,12 +26,14 @@ aside.aboutIntro h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* ======================= */
 .serviceCardPerent {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
+
 .serviceCard {
   width: 300px;
   flex-grow: 1;
@@ -37,15 +42,18 @@ aside.aboutIntro h2 {
   display: grid;
   place-items: center;
 }
+
 aside.aboutIntro p,
 .serviceCard p {
   color: var(--text);
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin-bottom: 15px;
 }
+
 .serviceCard h4 {
   margin: 15px;
 }
+
 .serviceCard p {
   text-align: center;
   font-size: 0.7rem;
@@ -60,13 +68,16 @@ aside.aboutIntro p,
   font-size: 0.8rem;
   padding-left: 1rem;
 }
+
 .figDesc span {
-color: var(--text);
+  color: var(--text);
 }
+
 p.productName {
-  font-weight:600;
+  font-weight: 600;
   color: var(--green);
 }
+
 .figDesc p i {
-color: #ffc107;
+  color: #ffc107;
 }
